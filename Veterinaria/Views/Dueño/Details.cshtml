@@ -1,0 +1,50 @@
+﻿@model Veterinaria.Models.Dueño
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dueño</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nomDueño)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomDueño)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apeDueño)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apeDueño)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idDueño }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
